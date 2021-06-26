@@ -9,7 +9,7 @@ interface IAuthenticateRequest{
     password: string;
 }
 
-class AutheticateUserSerivce{
+class AutheticateUserService{
     async execute({email, password}: IAuthenticateRequest){
         const usersRepository = getCustomRepository(UserRepositories);
 
@@ -33,8 +33,9 @@ class AutheticateUserSerivce{
             expiresIn: "1d"
 
         })
-
+        
+        return token;
     }
 }
 
-export {AutheticateUserSerivce};
+export {AutheticateUserService};
