@@ -14,7 +14,7 @@
 ## O Banco de Dados
 O banco de dados está organizado da seguinte maneira:
 
-<img src="../nlw-elogia/public/Data%20Base%20schema.png" width= 300 style="displey:flex; justify-content: center;">
+<img src="./public/Data%20Base%20schema.png" width= 300 style="displey:flex; justify-content: center;">
 
 ##  Start no projeto
 
@@ -36,8 +36,8 @@ Para rodar o projeto na sua maquina faça o clone do projeto e siga os passos:
 
 * Para importar o arquivo vá no Insomnia e clique em: 'Create > Import from File'
 
-<img src="./public/Import%20Insomnia%20file.png">
+<img src="./public/Import%20Insomnia%20file.png" style="displey:flex; justify-content: center;">
 
 * Lembre-se de alterar as variaveis da porta e token (após fazer Login) em 'Manage Environments'.
 
-<img src="./public/Insomnia.png">
+<img src="./public/Insomnia.png" style="displey:flex; justify-content: center;">
