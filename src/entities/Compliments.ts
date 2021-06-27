@@ -17,7 +17,7 @@ class Compliment {
 
     @Column()
     user_receiver: string;
-    @JoinColumn({name: "user_reciever"})
+    @JoinColumn({name: "user_receiver"})
     @ManyToOne(()=> User)
     userReciever: User;
 

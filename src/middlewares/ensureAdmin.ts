@@ -13,5 +13,5 @@ export async function ensureAdmin(request: Request, response: Response, next:Nex
         return next();
     }
 
-    return response.json({error: "Unauthorired user. It is not an admin"}).status(403);
+    return response.status(403).json({error: "Unauthorired user. It is not an admin"});
 }

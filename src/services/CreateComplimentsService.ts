@@ -24,7 +24,6 @@ class CreateComplimentService {
         if(!userRecieverExists){
             throw new Error ("The receiving user does not exists");
         }
-
         const compliment = complimentsRepositories.create({
             user_sender,
             user_receiver,
@@ -33,6 +32,8 @@ class CreateComplimentService {
         })
 
         await complimentsRepositories.save(compliment);
+
+        return compliment;
     }
 }
 

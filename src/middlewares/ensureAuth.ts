@@ -10,7 +10,7 @@ export function ensureAuth(request: Request, response: Response, next: NextFunct
     const token = request.headers.authorization;
 
     if (!token){
-        return response.json({error: "Login to access this route"}).status(401);
+        return response.status(401).json({error: "Login to access this route"});
     }
 
     const [,bearerToken] = token.split(" ");
@@ -22,7 +22,7 @@ export function ensureAuth(request: Request, response: Response, next: NextFunct
 
         return next();
     }catch(err){
-        return response.json({error: "Login to access this route"}).status(401);
+        return response.status(401).json({error: "Login to access this route"});
     }
 
 }

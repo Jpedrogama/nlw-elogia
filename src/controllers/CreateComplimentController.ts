@@ -15,7 +15,7 @@ class CreateComplimentController {
             message
         })
 
-        return response.json(compliment)
+        return response.json(compliment);
     }
 }
 

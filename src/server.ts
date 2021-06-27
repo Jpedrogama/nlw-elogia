@@ -12,10 +12,10 @@ app.use(router);
 app.use((err: Error, request: Request, response: Response, next: NextFunction) => {
 
     if(err instanceof Error){
-        return response.json({error: err.message}).status(400);
+        return response.status(400).json({error: err.message});
     }
     
-    return response.json({status: "error", message: "Internal Server Error"}).status(500);
+    return response.status(500).json({status: "error", message: "Internal Server Error"});
 
 })
 
