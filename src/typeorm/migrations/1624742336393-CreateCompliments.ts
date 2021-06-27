@@ -1,4 +1,4 @@
-import {MigrationInterface, QueryRunner, Table, UpdateQueryBuilder} from "typeorm";
+import {MigrationInterface, QueryRunner, Table} from "typeorm";
 
 export class CreateCompliments1624742336393 implements MigrationInterface {
 

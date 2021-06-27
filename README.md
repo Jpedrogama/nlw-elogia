@@ -22,4 +22,7 @@ Para rodar o projeto na sua maquina faça o clone do projeto e siga os passos:
 
 *   rodar o comando: 'yarn typeorm migration:run' para realizar as migrations do Banco de dados
 
+* Criar uma copia do arquivo .example.env e mudar o nome para .env
+  * Adicionar um token para o gerar o jwt e Colocar a porta que deseja rodar a aplicação.
+
 *   rodar o comando: 'yarn dev' para rodar a aplicação como desenvolvedor.

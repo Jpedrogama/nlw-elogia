@@ -5,7 +5,7 @@ import { UserRepositories } from "../repositories/UserRepositories";
 interface IComplimentRequest{
     user_sender: string;
     user_receiver: string;
-    tag_id?: string;
+    tag_id?: string; 
     message: string;    
 }
 

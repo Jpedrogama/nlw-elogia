@@ -1,6 +1,7 @@
 import { Entity, PrimaryColumn, Column, CreateDateColumn, JoinColumn, ManyToOne } from "typeorm";
 import { Tag } from "./Tag";
 import { User } from "./User";
+import {v4 as uuid} from "uuid";
 
 @Entity("compliments")
 class Compliment {
@@ -33,6 +34,11 @@ class Compliment {
     @CreateDateColumn()
     created_at: Date
 
+    constructor(){
+        if(!this.id){
+           this.id = uuid();
+        }
+    }
 }
 
 export {Compliment}

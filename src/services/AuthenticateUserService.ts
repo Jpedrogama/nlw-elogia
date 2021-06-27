@@ -28,10 +28,9 @@ class AutheticateUserService{
         const token = sign({
             email: user.email,
             isAdmin: user.admin
-        }, "temporario", {
+        }, process.env.JWT_SECRET, {
             subject: user.id,
             expiresIn: "1d"
-
         })
         
         return token;

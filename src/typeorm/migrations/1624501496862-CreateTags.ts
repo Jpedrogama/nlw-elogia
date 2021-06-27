@@ -22,11 +22,6 @@ export class CreateTags1624501496862 implements MigrationInterface {
                         name: "created_at",
                         type: "timestamp",
                         default: "now()"
-                    },
-                    {
-                        name: "updated_at",
-                        type: "timestamp",
-                        default: "now()"
                     }
                 ]
             })
