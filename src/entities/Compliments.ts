@@ -5,7 +5,7 @@ import {v4 as uuid} from "uuid";
 
 @Entity("compliments")
 class Compliment {
-
+ 
     @PrimaryColumn()
     readonly id: string;
 

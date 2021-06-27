@@ -13,7 +13,7 @@ class CreateComplimentController {
             user_receiver,
             tag_id,
             message
-        })
+        }) 
 
         return response.json(compliment);
     }
